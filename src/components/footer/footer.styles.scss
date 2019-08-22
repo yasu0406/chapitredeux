@@ -12,7 +12,9 @@ footer {
     }
     .first-footer {
         background-color: $main-color;
-        color: white;
+        p {
+            color: white;
+        }
 
         @media screen and (max-width: 468px) {
             li {

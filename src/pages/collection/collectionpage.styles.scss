@@ -1,0 +1,36 @@
+@import '../../common.scss';
+
+.collection {
+    margin-top: 0;
+    .collection-items {
+        li {
+            margin-bottom: 50px;
+            a {
+                display: block;
+            }
+            div {
+                margin-top: 10px;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 468px) {
+            margin: 0;
+            padding: 0;
+            li {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .category-list {
+        li {
+            margin-top: 20px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        a {
+            font-size: 	1.625rem;
+            color: $main-color;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../../common.scss';
+
+.main-visual {
+    height: 500px;
+    background-color: $main-color;
+    .collection-detail-info {
+        padding: 0 30px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        div {
+            padding: 0 30px;
+        }
+        h2, p, dt {
+            color: white;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 	1.625rem;
+        }
+        dt {
+            margin: 20px 0;
+        }
+        dd {
+            width: 40px;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+.description-content {
+    dl {
+        margin-bottom: 40px;
+    }
+    dt {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        color: $main-color;
+    }
+}
+.related-collection {
+    p {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        a {
+            color: $main-color;
+        }
+    }
+}
+footer {
+    .first-footer {
+        margin-top: 0;
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/img/logo.png';
 
 import './footer.styles.scss';
 
 const Footer = () => (
-    <footer>
+    <footer  data-delighter>
         <section className='first-footer'>
             <div className='container'>
                 <ul className='row'>
@@ -32,13 +32,13 @@ const Footer = () => (
                         <Link className='navbar-brand'><img src={Logo} alt=""/></Link>
                     </li>
                     <li className='col-md-2'>
-                        <Link>Home</Link>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li className='col-md-2'>
-                        <Link>Collection</Link>
+                        <Link to='/collection'>Collection</Link>
                     </li>
                     <li className='col-md-2'>
-                        <Link>Blog</Link>
+                        <Link to='/blog'>Blog</Link>
                     </li>
                     <li className='col-md-2'>
                         <Link>Sign In</Link>

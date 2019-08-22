@@ -29,6 +29,7 @@
         p {
             margin-bottom: 10px;
             font-size: 0.875rem;
+            color: white;
         }
         h1 {
             margin-bottom: 30px;
@@ -70,6 +71,14 @@
 }
 
 .about-chapiterdeux {
+    h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
     .second-collection-link {
         margin-bottom: 30px;
         ul {
@@ -147,16 +156,30 @@
     ul {
         margin-top: 100px;
         padding-top: 100px;
-        border-top: solid 1px $main-color;
+        position: relative;
         @media screen and (max-width: 468px) {
             li:first-child {
                 margin-bottom: 20px;
             }
         }
     }
+    ul:after {
+        content: '';
+        width: 0;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        border-top: solid 1px $main-color;
+        transition:2s;
+    }
+    ul.delighter.started:after {
+        width: 100%;
+    }
     ul:first-child {
         margin-top: 0;
         padding-top: 0;
+    }
+    ul:first-child:after {
         border-top: none; 
     }
     h3 {
